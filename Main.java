@@ -16,13 +16,22 @@ class Main
 
   System.out.println("There are "  + spaceAvailable(numPeople, numMax) + " spaces left");
   
+  // Asking if there are benches available 
+   
+   System.out.println("How many benches are there? ");
+  
+   int numBenches = scan.nextInt();
+   
+   System.out.println("How many benches are taken? ");
+  
+   int benchesTaken = scan.nextInt();
   
  }
-  
+  //methods
    static int spaceAvailable(int numPeople, int numMax)
   {
-    return numMax + numPeople;
+   return numMax + numPeople;
   }
-   
+  
  
 }
