@@ -18,20 +18,31 @@ class Main
   
   // Asking if there are benches available 
    
-   System.out.println("How many benches are there? ");
+   System.out.println("How many people ");
   
-   int numBenches = scan.nextInt();
+   int totalPeople = scan.nextInt();
    
-   System.out.println("How many benches are taken? ");
+   System.out.println("There are 3 activitives: Double biking (2), Roller Skating (1), Volleyball (4) ");
+   
+   System.out.println("How many want to bike (must be less than people)");
   
-   int benchesTaken = scan.nextInt();
+   int bikes = scan.nextInt();
+   
+   System.out.println("How many want to play volleyBall (must be less than people)");
+   int volleyBall = scan.nextInt();
+
+   System.out.println(leftOvers + " can Roller Skate");
+   
   
  }
-  //methods
+  //method 1
    static int spaceAvailable(int numPeople, int numMax)
   {
-   return numMax + numPeople;
+   return numMax - numPeople;
   }
+  //method 2
+
   
- 
+
+   
 }
